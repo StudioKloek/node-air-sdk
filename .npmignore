@@ -1,3 +1,6 @@
 node_modules
 .DS_Store
 .idea
+lib/*.zip
+lib/*.tbz2
+lib/AIR_SDK
