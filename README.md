@@ -1,4 +1,4 @@
-# node-air-sdk
+# @erikyuzwa/node-air-sdk
 AIR SDK wrapper for npm toolchain (updated)
 
 This is based mostly from the [node-air-sdk](https://www.npmjs.com/package/node-air-sdk) package which just 
