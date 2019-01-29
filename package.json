@@ -18,6 +18,7 @@
     "email": "erikyuzwa@gmail.com"
   },
   "bin": {
+    "amxmlc": "./bin/amxmlc",
     "mxmlc": "./bin/mxmlc",
     "compc": "./bin/compc",
     "fdb": "./bin/fdb",
