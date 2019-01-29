@@ -3,7 +3,6 @@ node_modules
 lib/AIR_SDK
 lib/*.zip
 lib/*.tbz2
-bin
 npm-debug.log
 *.tgz
 .idea
