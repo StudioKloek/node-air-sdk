@@ -1,14 +1,13 @@
-# @wazooinc/node-air-sdk
-AIR SDK wrapper for npm toolchain
+# node-air-sdk
+AIR SDK wrapper for npm toolchain (updated)
 
 This is based mostly from the [node-air-sdk](https://www.npmjs.com/package/node-air-sdk) package which just 
 doesn't look to be maintained anymore...
 
-Plus I've added a few things to warrant a new package. I've scoped it under `@wazooinc` to hopefully help the
-community 
+Plus I've added a few things to warrant a new package.
 
 # Building and Installing
 
-- `npm install @wazooinc/node-air-sdk`
-- `npm install -g @wazooinc/node-air-sdk #installing globally`
+- `npm install @erikyuzwa/node-air-sdk`
+- `npm install -g @erikyuzwa/node-air-sdk # to install globally`
 

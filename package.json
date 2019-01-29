@@ -1,5 +1,5 @@
 {
-  "name": "@wazooinc/node-air-sdk",
+  "name": "node-air-sdk",
   "version": "1.0.0",
   "description": "AIR SDK wrapper for npm toolchain",
   "main": "lib/air",
