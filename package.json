@@ -1,6 +1,6 @@
 {
   "name": "@erikyuzwa/node-air-sdk",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "AIR SDK wrapper for npm toolchain updated",
   "main": "lib/air",
   "scripts": {
