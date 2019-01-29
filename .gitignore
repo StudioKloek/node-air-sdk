@@ -5,6 +5,5 @@ lib/*.zip
 lib/*.tbz2
 bin
 npm-debug.log
-
+*.tgz
 .idea
-
