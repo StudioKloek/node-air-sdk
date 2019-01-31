@@ -6,3 +6,6 @@ lib/*.tbz2
 npm-debug.log
 *.tgz
 .idea
+
+package-lock.json
+yarn-lock.json
