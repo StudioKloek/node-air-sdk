@@ -1,3 +1,14 @@
+/**
+ * Erik Yuzwa - 01/30/2019
+ *
+ * This module was originally forked from the node-air-sdk project. This module is run by node in the "postinstall"
+ * script phase. We're basically detecting our current platform (windows or mac), then making a request to
+ * Adobe's servers to pull down the appropriate latest AIR SDK Compiler archive.
+ *
+ * Once finished, it's extracting the contents into a subfolder and making sure it's the tooling used by any project
+ * consuming this entire package.
+ */
+'use strict';
 const fs = require('fs');
 const path = require('path');
 const airSdk = require('./lib/air');
@@ -25,7 +36,7 @@ fs.stat(libFolder, function(err, stats) {
   downloadUrl = packageMetadata.airSdk[process.platform];
   console.log(chalk.yellow(downloadUrl));
 
-  console.log(chalk.green('Downloading Adobe AIR SDK, please wait...'));
+  console.log(chalk.green('Downloading latest Adobe AIR SDK, please wait...'));
   progress(request(downloadUrl, function (error, response, body) {
 
     if (error || response.statusCode !== 200) {
@@ -44,9 +55,14 @@ fs.stat(libFolder, function(err, stats) {
         process.exit(1);
       }
 
-      console.log(chalk.green('AIR SDK archive extracted...'));
-      console.log('Installing all playerglobal frameworks...');
+      // display the version number within the archive
+      airSdk.extractVersion();
+
+      // generate a mapping to the tooling binaries in the /bin folder of the AIR SDK
       airSdk.update();
+
+      // install all the available versions of the playerglobal framework
+      console.log('Installing all playerglobal frameworks...');
       playerGlobal.install(frameworksDir, function(err) {
         if (err) {
           console.error(chalk.magenta('Failed to install the latest "playerglobal.swc" library collection!', err));
