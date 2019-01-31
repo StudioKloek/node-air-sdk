@@ -23,12 +23,19 @@
     "email": "erikyuzwa@gmail.com"
   },
   "bin": {
+    "aasdoc": "./bin/aasdoc",
+    "acompc": "./bin/acompc",
+    "adl": "./bin/adl.exe",
+    "adt": "./bin/adt",
     "amxmlc": "./bin/amxmlc",
-    "mxmlc": "./bin/mxmlc",
+    "asdoc": "./bin/asdoc",
     "compc": "./bin/compc",
     "fdb": "./bin/fdb",
+    "fontswf": "./bin/fontswf",
+    "mxmlc": "./bin/mxmlc",
     "optimizer": "./bin/optimizer",
-    "swcdepends": "./bin/swcdepends"
+    "swcdepends": "./bin/swcdepends",
+    "swfdump": "./bin/swfdump"
   },
   "airSdk": {
     "darwin": "http://airdownload.adobe.com/air/mac/download/latest/AIRSDK_Compiler.tbz2",
@@ -41,6 +48,7 @@
     "playerglobal-latest": "^0.1.7",
     "request": "^2.88.0",
     "request-progress": "^3.0.0",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.3",
+    "xml2json": "^0.11.2"
   }
 }
