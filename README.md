@@ -8,7 +8,7 @@ platforms.
 
 A NPM wrapper for the Adobe AIR SDK. The idea it to provide simple access to AIR_SDK binaries using node. 
 The package has been set up to fetch the Adobe AIR SDK and run `amxmlc`, `mxmlc`, `fdb`, `compc`, `optimizer`, `swcdepends`,
-`adl` and `adt`, etc for MacOS and Windows.
+etc for MacOS and Windows.
 
 ## Latest AIR SDK Compiler
 

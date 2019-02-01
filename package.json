@@ -25,8 +25,6 @@
   "bin": {
     "aasdoc": "./bin/aasdoc",
     "acompc": "./bin/acompc",
-    "adl": "./bin/adl.exe",
-    "adt": "./bin/adt",
     "amxmlc": "./bin/amxmlc",
     "asdoc": "./bin/asdoc",
     "compc": "./bin/compc",
