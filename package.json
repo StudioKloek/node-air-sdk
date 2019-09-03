@@ -43,6 +43,7 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "dmg": "^0.1.0",
+    "executable": "^4.1.1",
     "extract-zip": "^1.6.7",
     "fs-extra": "^8.1.0",
     "playerglobal-latest": "^0.1.7",
