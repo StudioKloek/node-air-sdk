@@ -69,7 +69,7 @@ fs.stat(libFolder, function(err, stats) {
     }
 
     console.log(chalk.yellow('AIR SDK download complete!'));
-    console.log(chalk.yellow('Preparing to extract AIR SDK archive, please wait......'));
+    console.log(chalk.yellow('Preparing to extract AIR SDK archive, please wait...'));
 
     if (fileExtention === '.dmg') {
       // to open & mount the dmg
@@ -80,12 +80,14 @@ fs.stat(libFolder, function(err, stats) {
         }
 
         // show all files in dmg
+        console.log(chalk.yellow('Start to copy all file from DMG...'));
         fs.copySync(path, frameworksDir);
+        console.log(chalk.yellow('Done'));
+
+        installAIRSDK();
 
         // later you can and should unmount
-        dmg.unmount(path, function(err) {
-          installAIRSDK();
-        });
+        dmg.unmount(path, function(err) {});
       });      
     } else {
       extract(tmpLocation, {dir: frameworksDir}, function (err) {
