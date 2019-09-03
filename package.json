@@ -36,13 +36,15 @@
     "swfdump": "./bin/swfdump"
   },
   "airSdk": {
-    "darwin": "http://airdownload.adobe.com/air/mac/download/latest/AIRSDK_Compiler.tbz2",
+    "darwin": "http://airdownload.adobe.com/air/mac/download/latest/AIRSDK_Compiler.dmg",
     "win32": "http://airdownload.adobe.com/air/win/download/latest/AIRSDK_Compiler.zip"
   },
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.2",
+    "dmg": "^0.1.0",
     "extract-zip": "^1.6.7",
+    "fs-extra": "^8.1.0",
     "playerglobal-latest": "^0.1.7",
     "request": "^2.88.0",
     "request-progress": "^3.0.0",
