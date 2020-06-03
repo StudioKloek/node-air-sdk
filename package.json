@@ -1,7 +1,7 @@
 {
-  "name": "@erikyuzwa/node-air-sdk",
-  "version": "1.0.8",
-  "description": "AIR SDK wrapper for npm toolchain updated",
+  "name": "@studiokloek/node-air-sdk",
+  "version": "1.1.0",
+  "description": "AIR SDK wrapper for npm toolchain",
   "main": "lib/air",
   "scripts": {
     "postinstall": "node install.js"
@@ -10,17 +10,16 @@
     "air",
     "flex",
     "flash",
-    "flashplayer",
-    "awesomesauce"
+    "flashplayer"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erikyuzwa/node-air-sdk.git"
+    "url": "git+https://github.com/studiokloek/node-air-sdk.git"
   },
-  "homepage": "https://github.com/erikyuzwa/node-air-sdk#readme",
+  "homepage": "https://github.com/studiokloek/node-air-sdk#readme",
   "author": {
-    "name": "Erik Yuzwa",
-    "email": "erikyuzwa@gmail.com"
+    "name": "Martijn Swart",
+    "email": "opensource@studiokloek.nl"
   },
   "bin": {
     "aasdoc": "./bin/aasdoc",
@@ -41,15 +40,15 @@
   },
   "license": "MIT",
   "dependencies": {
-    "chalk": "^2.4.2",
+    "chalk": "^4.0.0",
     "dmg": "^0.1.0",
     "executable": "^4.1.1",
-    "extract-zip": "^1.6.7",
-    "fs-extra": "^8.1.0",
+    "extract-zip": "^2.0.0",
+    "fs-extra": "^9.0.0",
     "playerglobal-latest": "^0.1.7",
-    "request": "^2.88.0",
+    "request": "^2.88.2",
     "request-progress": "^3.0.0",
-    "shelljs": "^0.8.3",
-    "xml2json": "^0.11.2"
+    "shelljs": "^0.8.4",
+    "xml2json": "^0.12.0"
   }
 }
