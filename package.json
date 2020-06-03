@@ -28,8 +28,6 @@
     "asdoc": "./bin/asdoc",
     "compc": "./bin/compc",
     "fdb": "./bin/fdb",
-    "adl": "./bin/adl",
-    "adt": "./bin/adt",
     "fontswf": "./bin/fontswf",
     "mxmlc": "./bin/mxmlc",
     "optimizer": "./bin/optimizer",
