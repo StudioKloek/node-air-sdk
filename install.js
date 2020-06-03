@@ -17,6 +17,7 @@ const playerGlobal = require('playerglobal-latest');
 const chalk = require('chalk');
 const progress = require('request-progress');
 const dmg = require('dmg');
+const extract = require('extract-zip');
 
 const packageMetadata = require('./package.json');
 const name = 'AIRSDK_Compiler';
@@ -25,7 +26,6 @@ const downloadUrl = packageMetadata.airSdk[process.platform];
 const fileExtention = path.extname(downloadUrl);
 const tmpLocation = path.join(__dirname, 'lib', name + fileExtention);
 const frameworksDir = path.join(__dirname, libFolder);
-// const extract = require('extract-zip');
 
 function installAIRSDK() {
     // display the version number within the archive
